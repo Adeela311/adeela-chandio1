@@ -12,6 +12,13 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "text_bMGyQd": {
+          "type": "text",
+          "source": "{{ metaobjects[\"shopify--color-pattern\"].black }}",
+          "settings": {
+            "text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
@@ -32,6 +39,7 @@
         }
       },
       "block_order": [
+        "text_bMGyQd",
         "heading",
         "button"
       ],
@@ -53,7 +61,7 @@
       "type": "featured-collection",
       "settings": {
         "collection": "all",
-        "products_to_show": 8,
+        "products_to_show": 6,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
