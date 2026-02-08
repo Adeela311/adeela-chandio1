@@ -29,7 +29,6 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="page-width page-width--narrow section-{{ section.id }}-padding">
-    
     <h2 class="page-title {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       {%- if section.settings.page.title != blank -%}
         {{ section.settings.page.title | escape }}
@@ -46,35 +45,33 @@
           {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
         </div>
       {%- endif -%}
-
       <!-- VECTORS CONTAINER START -->
       <div class="vector-container">
-        <img src="{{ 'vector1.svg' | asset_url }}" alt="Vector 1">
-        <img src="{{ 'vector2.svg' | asset_url }}" alt="Vector 2">
-        <img src="{{ 'vector3.svg' | asset_url }}" alt="Vector 3">
-        <img src="{{ 'vector4.svg' | asset_url }}" alt="Vector 4">
-        <img src="{{ 'vector5.svg' | asset_url }}" alt="Vector 5">
-        <img src="{{ 'vector6.svg' | asset_url }}" alt="Vector 6">
-        <img src="{{ 'vector7.svg' | asset_url }}" alt="Vector 7">
-        <img src="{{ 'vector8.svg' | asset_url }}" alt="Vector 8">
-        <img src="{{ 'vector9.svg' | asset_url }}" alt="Vector 9">
-        <img src="{{ 'vector10.svg' | asset_url }}" alt="Vector 10">
-        <img src="{{ 'vector11.svg' | asset_url }}" alt="Vector 11">
-        <img src="{{ 'vector12.svg' | asset_url }}" alt="Vector 12">
-        <img src="{{ 'vector13.svg' | asset_url }}" alt="Vector 13">
-        <img src="{{ 'vector14.svg' | asset_url }}" alt="Vector 14">
-        <img src="{{ 'vector15.svg' | asset_url }}" alt="Vector 15">
-        <img src="{{ 'vector16.svg' | asset_url }}" alt="Vector 16">
-        <img src="{{ 'vector17.svg' | asset_url }}" alt="Vector 17">
-        <img src="{{ 'vector18.svg' | asset_url }}" alt="Vector 18">
-        <img src="{{ 'vector19.svg' | asset_url }}" alt="Vector 19">
-        <img src="{{ 'vector20.svg' | asset_url }}" alt="Vector 20">
-        <img src="{{ 'vector21.svg' | asset_url }}" alt="Vector 21">
-        <img src="{{ 'vector22.svg' | asset_url }}" alt="Vector 22">
-        <img src="{{ 'vector23.svg' | asset_url }}" alt="Vector 23">
+        <img src="{{ 'vector-1.png' | asset_url }}" alt="Vector 1" width="100" height="100">
+        <img src="{{ 'vector-2.png' | asset_url }}" alt="Vector 2" width="100" height="100">
+        <img src="{{ 'vector-3.png' | asset_url }}" alt="Vector 3" width="100" height="100">
+        <img src="{{ 'vector-4.png' | asset_url }}" alt="Vector 4" width="100" height="100">
+        <img src="{{ 'vector-5.png' | asset_url }}" alt="Vector 5" width="100" height="100">
+        <img src="{{ 'vector-6.png' | asset_url }}" alt="Vector 6" width="100" height="100">
+        <img src="{{ 'vector-7.png' | asset_url }}" alt="Vector 7" width="100" height="100">
+        <img src="{{ 'vector-8.png' | asset_url }}" alt="Vector 8" width="100" height="100">
+        <img src="{{ 'vector-9.png' | asset_url }}" alt="Vector 9" width="100" height="100">
+        <img src="{{ 'vector-10.png' | asset_url }}" alt="Vector 10" width="100" height="100">
+        <img src="{{ 'vector-11.png' | asset_url }}" alt="Vector 11" width="100" height="100">
+        <img src="{{ 'vector-12.png' | asset_url }}" alt="Vector 12" width="100" height="100">
+        <img src="{{ 'vector-13.png' | asset_url }}" alt="Vector 13" width="100" height="100">
+        <img src="{{ 'vector-14.png' | asset_url }}" alt="Vector 14" width="100" height="100">
+        <img src="{{ 'vector-15.png' | asset_url }}" alt="Vector 15" width="100" height="100">
+        <img src="{{ 'vector-16.png' | asset_url }}" alt="Vector 16" width="100" height="100">
+        <img src="{{ 'vector-17.png' | asset_url }}" alt="Vector 17" width="100" height="100">
+        <img src="{{ 'vector-18.svg' | asset_url }}" alt="Vector 18" width="100" height="100">
+        <img src="{{ 'vector-19.svg' | asset_url }}" alt="Vector 19" width="100" height="100">
+        <img src="{{ 'vector-20.svg' | asset_url }}" alt="Vector 20" width="100" height="100">
+        <img src="{{ 'vector-21.svg' | asset_url }}" alt="Vector 21" width="100" height="100">
+        <img src="{{ 'vector-22.svg' | asset_url }}" alt="Vector 22" width="100" height="100">
+        <img src="{{ 'vector-23.svg' | asset_url }}" alt="Vector 23" width="100" height="100">
       </div>
       <!-- VECTORS CONTAINER END -->
-
     </div>
   </div>
 </div>
@@ -97,11 +94,11 @@
       "type": "select",
       "id": "heading_size",
       "options": [
-        {"value": "h2", "label": "t:sections.all.heading_size.options__1.label"},
-        {"value": "h1", "label": "t:sections.all.heading_size.options__2.label"},
-        {"value": "h0", "label": "t:sections.all.heading_size.options__3.label"},
-        {"value": "hxl", "label": "t:sections.all.heading_size.options__4.label"},
-        {"value": "hxxl", "label": "t:sections.all.heading_size.options__5.label"}
+        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
+        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" },
+        { "value": "h0", "label": "t:sections.all.heading_size.options__3.label" },
+        { "value": "hxl", "label": "t:sections.all.heading_size.options__4.label" },
+        { "value": "hxxl", "label": "t:sections.all.heading_size.options__5.label" }
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
