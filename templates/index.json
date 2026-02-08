@@ -16,7 +16,8 @@
           "type": "text",
           "source": "{{ metaobjects[\"shopify--color-pattern\"].black }}",
           "settings": {
-            "text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+            "text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
+            "text_style": "body"
           }
         },
         "heading": {
@@ -44,12 +45,12 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/casual-fashion-woman_925x_56b56608-f207-45c1-b677-bb5aa26c1c7a.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image": "shopify://shop_images/Frame_1.svg",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
         "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "bottom-left",
+        "desktop_content_alignment": "left",
         "show_text_box": false,
         "color_scheme": "scheme-3",
         "stack_images_on_mobile": false,
