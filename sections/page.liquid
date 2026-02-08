@@ -12,19 +12,6 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
-
-  /* Vector container styling */
-  .vector-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-  }
-
-  .vector-container img {
-    width: 100px; /* Adjust size as needed */
-    height: auto;
-  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -36,7 +23,6 @@
         {{ 'sections.page.title' | t }}
       {%- endif -%}
     </h2>
-
     <div class="rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       {%- if section.settings.page.content != blank -%}
         {{ section.settings.page.content }}
@@ -45,33 +31,6 @@
           {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
         </div>
       {%- endif -%}
-      <!-- VECTORS CONTAINER START -->
-      <div class="vector-container">
-        <img src="{{ 'vector-1.png' | asset_url }}" alt="Vector 1" width="100" height="100">
-        <img src="{{ 'vector-2.png' | asset_url }}" alt="Vector 2" width="100" height="100">
-        <img src="{{ 'vector-3.png' | asset_url }}" alt="Vector 3" width="100" height="100">
-        <img src="{{ 'vector-4.png' | asset_url }}" alt="Vector 4" width="100" height="100">
-        <img src="{{ 'vector-5.png' | asset_url }}" alt="Vector 5" width="100" height="100">
-        <img src="{{ 'vector-6.png' | asset_url }}" alt="Vector 6" width="100" height="100">
-        <img src="{{ 'vector-7.png' | asset_url }}" alt="Vector 7" width="100" height="100">
-        <img src="{{ 'vector-8.png' | asset_url }}" alt="Vector 8" width="100" height="100">
-        <img src="{{ 'vector-9.png' | asset_url }}" alt="Vector 9" width="100" height="100">
-        <img src="{{ 'vector-10.png' | asset_url }}" alt="Vector 10" width="100" height="100">
-        <img src="{{ 'vector-11.png' | asset_url }}" alt="Vector 11" width="100" height="100">
-        <img src="{{ 'vector-12.png' | asset_url }}" alt="Vector 12" width="100" height="100">
-        <img src="{{ 'vector-13.png' | asset_url }}" alt="Vector 13" width="100" height="100">
-        <img src="{{ 'vector-14.png' | asset_url }}" alt="Vector 14" width="100" height="100">
-        <img src="{{ 'vector-15.png' | asset_url }}" alt="Vector 15" width="100" height="100">
-        <img src="{{ 'vector-16.png' | asset_url }}" alt="Vector 16" width="100" height="100">
-        <img src="{{ 'vector-17.png' | asset_url }}" alt="Vector 17" width="100" height="100">
-        <img src="{{ 'vector-18.svg' | asset_url }}" alt="Vector 18" width="100" height="100">
-        <img src="{{ 'vector-19.svg' | asset_url }}" alt="Vector 19" width="100" height="100">
-        <img src="{{ 'vector-20.svg' | asset_url }}" alt="Vector 20" width="100" height="100">
-        <img src="{{ 'vector-21.svg' | asset_url }}" alt="Vector 21" width="100" height="100">
-        <img src="{{ 'vector-22.svg' | asset_url }}" alt="Vector 22" width="100" height="100">
-        <img src="{{ 'vector-23.svg' | asset_url }}" alt="Vector 23" width="100" height="100">
-      </div>
-      <!-- VECTORS CONTAINER END -->
     </div>
   </div>
 </div>
@@ -94,11 +53,26 @@
       "type": "select",
       "id": "heading_size",
       "options": [
-        { "value": "h2", "label": "t:sections.all.heading_size.options__1.label" },
-        { "value": "h1", "label": "t:sections.all.heading_size.options__2.label" },
-        { "value": "h0", "label": "t:sections.all.heading_size.options__3.label" },
-        { "value": "hxl", "label": "t:sections.all.heading_size.options__4.label" },
-        { "value": "hxxl", "label": "t:sections.all.heading_size.options__5.label" }
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
+        }
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
